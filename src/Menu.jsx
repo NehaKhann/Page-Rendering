@@ -11,6 +11,10 @@ const Menu = () => {
       <NavLink activeClassName="active_class" to="/contact">
         Contact Us
       </NavLink>
+      <br />
+      <NavLink activeClassName="active_class" to="/user/Neha/Khan">
+        User
+      </NavLink>
     </div>
   );
 };

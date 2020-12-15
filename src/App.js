@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import About from "./About";
 import Contact from "./Contact";
+import User from "./User";
 import { Route, Switch } from "react-router-dom";
 import Menu from "./Menu";
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={About} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/user/:fname/:lname" component={User} />
         <Route path="/contact/name" component={name} />
         <Route component={Error} />
       </Switch>
